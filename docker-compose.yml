@@ -9,8 +9,8 @@ services:
   odoo:
     image: 'bitnami/odoo:13'
     ports:
-      - '80:8069'
-      - '443:8071'
+      - '8069:8069'
+      - '4443:8071'
     volumes:
       - 'odoo_data:/bitnami'
     depends_on:
